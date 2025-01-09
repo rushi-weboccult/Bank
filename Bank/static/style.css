@@ -1,0 +1,158 @@
+/* Custom Styles for Digital Banking System */
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:lightcyan;
+    color: #333;
+    height: auto;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    /* margin-top: 30px; */
+}
+
+/* Center the Container */
+.container {
+    max-width: 100%;
+    margin-top: 20px;
+    /* padding: 20px; */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Elements Styling */
+.form-label {
+    font-weight: 600;
+    color: #343a40;
+    margin-left: 10%;
+}
+
+input[type="text"], input[type="password"],input[type="number"]{
+    margin-bottom: 20px;
+    margin-left: 10%;
+    height: 25px;
+    width: 75%;
+}
+
+button {
+    width: 75%;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 11%;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Flash Messages */
+.alert {
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    width: 95%;
+    height: 20px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    /* padding: 20px; */
+    margin-left: 28%;
+    margin-right: 28%;
+}
+
+.card-body {
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h5 {
+    margin:0% ;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #343a40;
+    /* margin-bottom: 20px; */
+}
+
+/* Buttons in Cards */
+.card .btn {
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color:cadetblue;
+}
+/* 
+.card .btn-primary {
+    background-color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.card .btn-danger {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.card .btn-info {
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+} */
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    /* color: #007bff; */
+    color: black;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: #343a40;
+    background-color:wheat;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 100%;
+    /* background-color: #f1f3f5; */
+}

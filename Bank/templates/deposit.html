@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit - Digital Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pzjw8f+ua7Kw1TIq0m3v5g2XZkGb5U5E7zqX5t6kde6sCZ6sqEybvdk+Zd0tDg3P" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Deposit Amount</h1>
+
+    <div class="card">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="alert alert-danger">
+                {% for category, message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endwith %}
+        <div class="card-body">
+            <form method="POST">
+                <div class="mb-3">
+                    <label for="amount" class="form-label">Amount to Deposit</label>
+                    <input type="number" class="form-control" id="amount" min="1" name="amount" required>
+                </div>
+                <button type="submit" class="btn btn-success">Deposit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Digital Banking System. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb8FjEXy9bP4bA13zKn8y+dV8JzF9QOQe4a1fM4JWm/6rL59d" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyR7v9Ff6vftj7YoMpgGkRl+5oV7+y5oV3mkt60c4E6UpvLvi64y5ml" crossorigin="anonymous"></script>
+
+</body>
+</html>
